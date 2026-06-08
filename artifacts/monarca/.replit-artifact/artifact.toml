@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Monarca Restaurant"
+version = "1.0.0"
+id = "artifacts/monarca"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21117
+
+[services.development]
+run = "pnpm --filter @workspace/monarca run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/monarca", "run", "build" ]
+publicDir = "artifacts/monarca/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21117"
+BASE_PATH = "/"

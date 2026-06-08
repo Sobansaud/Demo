@@ -1,0 +1,113 @@
+Create a stunning, modern, mobile-responsive restaurant website for "Monarca" — 
+a fine dining restaurant with hookah in Karachi, Pakistan.
+
+BRAND INFO:
+- Restaurant Name: Monarca
+- Tagline: "Fine Dining Redefined with Hookah"
+- Phone: +92 300 7058898
+- Address: Building Plot No 1-C, 4th Floor, Khy-e-Shaheen, Phase VIII, DHA, Karachi
+- Facebook: https://www.facebook.com/monarca.pk/
+- Instagram handle: @monarcapk
+- Google Maps Embed Link: https://www.google.com/maps?ftid=0x3eb33d162cf0f25b:0xd0244a295f198d61
+
+DESIGN REQUIREMENTS:
+- Color palette: Deep gold (#C9A84C), Rich black (#0D0D0D), and Cream white (#F5F0E8)
+- Font style: Elegant serif for headings, clean sans-serif for body
+- Mood: Luxury, upscale, premium fine dining
+- Use the uploaded logo image in the navbar and hero section
+- Use the uploaded background/food image as the hero section background with dark overlay
+
+SECTIONS TO BUILD (in this order):
+
+1. NAVBAR
+- Logo on left
+- Nav links: Home, Menu, About, Gallery, Reservations, Contact
+- "Book a Table" CTA button (gold colored)
+- Sticky on scroll
+
+2. HERO SECTION
+- Full-screen background image (use uploaded image)
+- Dark overlay (opacity 0.6)
+- Centered text: Big heading "Welcome to Monarca" 
+- Subheading: "Fine Dining Redefined with Hookah"
+- Two buttons: "Explore Menu" and "Reserve a Table"
+- Subtle fade-in animation
+
+3. ABOUT SECTION
+- Heading: "Our Story"
+- Text: "Nestled on the 4th floor overlooking DHA Phase 8, Monarca offers an 
+  unmatched dining experience where continental cuisine meets the art of hookah. 
+  Whether you're here for a romantic dinner or a night out with friends, every 
+  visit is a celebration."
+- A decorative divider line with the logo icon
+
+4. MENU SECTION
+- Heading: "Our Menu"
+- Display menu categories as elegant cards:
+
+  STARTERS:
+  - Grilled Mushroom Bruschetta
+  - Crispy Calamari
+  - Chicken Lollipops
+  - Hummus with Pita
+
+  MAIN COURSE:
+  - Grilled Chicken Steak (Continental)
+  - Beef Tenderloin
+  - Pasta Arabiata
+  - Creamy Mushroom Risotto
+  - BBQ Chicken Pizza
+
+  DESSERTS:
+  - Signature Monarca Cake
+  - Nutella Waffle
+  - Chocolate Lava Cake
+  - Crème Brûlée
+
+  BEVERAGES:
+  - Fresh Juices
+  - Specialty Mocktails
+  - Cold Coffee
+  - Hot Beverages
+
+  HOOKAH:
+  - Double Apple
+  - Blue Mist
+  - Mint Fresh
+  - Signature Monarca Mix
+
+- Each category in a tab or accordion style
+
+5. GALLERY SECTION
+- Heading: "Experience Monarca"
+- CSS grid photo gallery (6 boxes placeholder with elegant overlay effect)
+- Hover zoom effect on each photo
+
+6. RESERVATION SECTION
+- Heading: "Reserve Your Table"
+- Clean form with fields: Name, Phone Number, Date, Time, Number of Guests, 
+  Special Requests
+- Gold "Book Now" submit button
+- Below form: "Or call us directly: +92 300 7058898"
+
+7. CONTACT SECTION
+- Address with map icon
+- Phone number (clickable tel: link)
+- Facebook link icon
+- Instagram link icon
+- Embedded Google Maps iframe of their location
+
+8. FOOTER
+- Logo centered
+- "© 2025 Monarca. All Rights Reserved."
+- Social icons row
+
+TECHNICAL REQUIREMENTS:
+- Pure HTML, CSS, JavaScript (single file — index.html)
+- No external frameworks except Google Fonts
+- Google Font: "Playfair Display" for headings, "Lato" for body
+- Smooth scroll behavior
+- Mobile hamburger menu
+- Scroll animations using Intersection Observer API
+- WhatsApp floating button bottom-right: wa.me/923007058898
+- All hover effects smooth (transition: 0.3s ease)
