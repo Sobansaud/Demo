@@ -17,7 +17,7 @@ export function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            variants={fadeLeft}
+            variants={fadeLeft as any}
           >
             <div className="space-y-4">
               <p className="text-primary uppercase tracking-[0.3em] text-xs">Who We Are</p>
@@ -81,7 +81,7 @@ export function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            variants={fadeRight}
+            variants={fadeRight as any}
           >
             <div className="relative">
               {/* Corner ornaments */}

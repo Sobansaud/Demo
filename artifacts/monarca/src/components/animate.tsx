@@ -6,7 +6,7 @@ export const fadeUp = {
   visible: (i = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: i * 0.12 },
+    transition: { duration: 0.7, delay: i * 0.12 },
   }),
 };
 
@@ -15,7 +15,7 @@ export const fadeLeft = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.8 },
   },
 };
 
@@ -24,7 +24,7 @@ export const fadeRight = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.8 },
   },
 };
 
@@ -51,7 +51,7 @@ export function Reveal({ children, className, delay = 0, direction = "up" }: Rev
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
       custom={delay}
-      variants={variants}
+      variants={variants as any}
     >
       {children}
     </motion.div>
