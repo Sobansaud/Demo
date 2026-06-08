@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter '@workspace/monarca' run build",
+  "installCommand": "pnpm install",
+  "outputDirectory": "artifacts/monarca/dist/public"
+}
