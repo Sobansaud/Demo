@@ -36,10 +36,28 @@ export function Reservation() {
     defaultValues: { name: "", phone: "", date: "", time: "", guests: "", requests: "" },
   });
 
-  function onSubmit(_data: z.infer<typeof formSchema>) {
+  function onSubmit(data: z.infer<typeof formSchema>) {
+    const msg = [
+      `🍽️ *New Table Reservation – Monarca*`,
+      ``,
+      `👤 *Name:* ${data.name}`,
+      `📞 *Phone:* ${data.phone}`,
+      `📅 *Date:* ${data.date}`,
+      `🕐 *Time:* ${data.time}`,
+      `👥 *Guests:* ${data.guests}`,
+      data.requests ? `📝 *Special Requests:* ${data.requests}` : null,
+      ``,
+      `_Sent via Monarca website_`,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const waUrl = `https://wa.me/923007058898?text=${encodeURIComponent(msg)}`;
+    window.open(waUrl, "_blank");
+
     toast({
-      title: "Reservation Requested",
-      description: "We'll contact you shortly to confirm your table.",
+      title: "Opening WhatsApp",
+      description: "Your reservation details are ready to send!",
       className: "bg-primary text-primary-foreground border-none",
     });
     form.reset();
